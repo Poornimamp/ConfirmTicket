@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Trains</title>
+</head>
+<body>
+    <h1>Search Trains</h1>
+    <form>
+        <div>
+            <input type="text" name="fromStation" id="fromStation" placeholder="FromStation" list="stations"required autofocus>
+            <!--dropbox-->
+            <datalist id="stations">
+                <option value=""disabled>--select--</option>
+                <option value="MAS">chennai central</option>
+                <option value="CGL">chengalpattu</option>
+                <option value="MDU">Madurai</option>
+            </datalist>
+        </div><br>
+    <div>
+   <input type="text"name="ToStation" id="ToStation" placeholder=" ToStation"list="stations" required>
+    <!--dropdownbox-->
+    <datalist id="stations">
+        <option value=""disabled>--select--</option>
+        <option value="MAS">chennai central</option>
+        <option value="CGL">chengalpattu</option>
+        <option value="MDU">Madurai</option>
+    </datalist>
+</div>
+<br>
+     <!--label for="journeyDate">Journey Date</label-->
+     <input type="date" name="journeyDate" placeholder="Journey Date" min="2021-10-21" max="2021-12-30" required><br><br>
+     <button type="submit">Search</button>
+    <a href="index.html">BackToHomePage</a>
+
+     
+    </form>
+</body>
+</html> 
